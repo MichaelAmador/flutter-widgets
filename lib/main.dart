@@ -5,7 +5,7 @@ import 'config/router/app_router.dart';
 import 'config/themes/app_theme.dart';
 
 void main() {
-  HttpOverrides.global = MyHttpOverrides();
+  // HttpOverrides.global = MyHttpOverrides();
   runApp(const MainApp());
 }
 
