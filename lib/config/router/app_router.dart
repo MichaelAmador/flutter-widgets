@@ -29,5 +29,10 @@ final appRouter = GoRouter(
       name: SnackbackScreen.name,
       builder: (context, state) => const SnackbackScreen(),
     ),
+    GoRoute(
+      path: '/animated',
+      name: AnimatedScreen.name,
+      builder: (context, state) => const AnimatedScreen(),
+    ),
   ],
 );
