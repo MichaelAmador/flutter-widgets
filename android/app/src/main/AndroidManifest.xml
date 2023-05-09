@@ -2,7 +2,7 @@
     package="com.example.widgets">
     <uses-permission android:name="android.permission.INTERNET"/>
    <application
-        android:label="widgets"
+        android:label="Widgets"
         android:name="${applicationName}"
         android:icon="@mipmap/ic_launcher">
         <activity
