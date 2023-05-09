@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:widgets/presentations/providers/theme_provider.dart';
 
 const colorList = <Color>[
   Colors.blue,
@@ -22,4 +23,8 @@ class AppTheme {
       brightness: isDarkMode ? Brightness.dark : Brightness.light,
       colorSchemeSeed: colorList[selectedColor],
       appBarTheme: const AppBarTheme(centerTitle: false));
+
+  AppTheme copyWiht({int? selectedColor, bool? isDarkMode}) => AppTheme(
+      selectedColor: selectedColor ?? this.selectedColor,
+      isDarkMode: isDarkMode ?? this.isDarkMode);
 }
